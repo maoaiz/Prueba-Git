@@ -19,4 +19,5 @@
         echo "$line<br>";
     }
     echo "fin de prueba.php";
+    echo "Mauricio";
 ?>
