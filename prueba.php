@@ -18,4 +18,5 @@
     foreach($salida as $line) {
         echo "$line<br>";
     }
+    echo "fin de prueba.php";
 ?>
