@@ -9,4 +9,18 @@ window.log = function f(){ log.history = log.history || []; log.history.push(arg
 
 // place any jQuery/helper plugins in here, instead of separate, slower script files.
 
-$("body").css({"height":$(window).height()+"px"});
+//$("body").css({"height":$(window).height()+"px"});
+
+     function echoSize() {
+            $("#anchov").text($(window).width())
+            $("#altov").text($(window).height())
+            $("#anchoc").text($("#container").width())
+            $("#altoc").text($("#container").height())
+//            $("#altoc").text($("body").height())
+//            $("body").css({"height":($(window).height())+"px"});
+//            $("html").css({"height":"100%"});
+            $("body").css({"height":"100%"});
+        }
+
+       echoSize();
+       window.onresize = echoSize;
